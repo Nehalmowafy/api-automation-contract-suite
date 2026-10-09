@@ -1,0 +1,18 @@
+{
+  "name": "api-automation-contract-suite",
+  "version": "1.0.0",
+  "description": "Headless REST & SOAP API test automation suite built with Playwright and GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:rest": "playwright test tests/rest.spec.js",
+    "test:soap": "playwright test tests/soap.spec.js",
+    "report": "playwright show-report"
+  },
+  "keywords": ["playwright", "javascript", "api-testing", "rest-api", "soap-api", "ci-cd"],
+  "author": "Nehal Mowafy",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.45.0"
+  }
+}
