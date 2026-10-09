@@ -31,3 +31,27 @@ api-automation-contract-suite/
 ├── package.json                # Project dependencies and script shortcuts
 ├── .gitignore
 └── README.md
+
+🚀 Local Setup & Execution
+1. Clone the repository
+Bash
+git clone [https://github.com/Nehalmowafy/api-automation-contract-suite.git](https://github.com/Nehalmowafy/api-automation-contract-suite.git)
+cd api-automation-contract-suite
+2. Install dependencies
+Bash
+npm ci
+(Notice: No browser installation command (npx playwright install) is needed for this repository).
+
+3. Run the test suites
+Bash
+# Execute entire backend suite (REST + SOAP)
+npm test
+
+# Run only REST API contract specifications
+npm run test:rest
+
+# Run only SOAP XML envelope specifications
+npm run test:soap
+
+# View interactive HTML execution report
+npm run report
